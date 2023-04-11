@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileAct">
+
+
+    <TextView
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textSize="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back_button"
+        app:layout_constraintBottom_toBottomOf="@id/back_button"
+        android:layout_marginEnd="30dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/avatar_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="142dp"
+        tools:srcCompat="@tools:sample/avatars"
+        />
+
+    <Button
+        android:id="@+id/change_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="."
+        android:drawableTop="@drawable/camera_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="123dp"
+        android:background="@drawable/button_shape_circle"
+
+
+        />
+
+    <TextView
+        android:id="@+id/texst_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Applied"
+        app:layout_constraintEnd_toStartOf="@id/texst_2"
+        app:layout_constraintTop_toTopOf="@id/texst_2"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/texst_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviewed"
+        app:layout_constraintTop_toBottomOf="@id/avatar_pic"
+        app:layout_constraintStart_toStartOf="@id/avatar_pic"
+        app:layout_constraintEnd_toEndOf="@id/avatar_pic"
+        android:layout_marginTop="25dp"
+        />
+    <TextView
+        android:id="@+id/texst_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacted"
+        app:layout_constraintStart_toEndOf="@id/texst_2"
+        app:layout_constraintTop_toTopOf="@id/texst_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete Profile"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/texst_1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="45dp"
+
+        />
+    <Button
+        android:id="@+id/buy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Pro $23.49"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+
+        />
+
+    <Button
+        android:id="@+id/butt_1"
+        android:layout_width="150dp"
+        android:layout_height="175dp"
+        android:text="Education"
+        android:textAllCaps="false"
+        android:background="@drawable/button_shape"
+        app:layout_constraintTop_toBottomOf="@id/profile_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="35dp"
+
+        />
+
+    <Button
+        android:id="@+id/butt_2"
+        android:layout_width="150dp"
+        android:layout_height="175dp"
+        android:text="Professional"
+        android:textAllCaps="false"
+        android:background="@drawable/button_shape"
+        app:layout_constraintTop_toBottomOf="@id/profile_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="35dp"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
